@@ -5,6 +5,7 @@ $(".miIni").click(function(){
     $("#divLocalizacao").hide();
     $("#divContatos").hide();
     $("#navMenu").hide();
+    $("#divCarrossel").hide();
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -21,6 +22,7 @@ $(".miHis").click(function(){
     $("#divLocalizacao").hide();
     $("#divContatos").hide();
     $("#navMenu").show();
+    $("#divCarrossel").show();
     $(".miHis").addClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -37,6 +39,7 @@ $(".miCar").click(function(){
     $("#divLocalizacao").hide();
     $("#divContatos").hide();
     $("#navMenu").show();
+    $("#divCarrossel").show();
     $(".miHis").removeClass("ativo");
     $(".miCar").addClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -53,6 +56,7 @@ $(".miLoc").click(function(){
     $("#divLocalizacao").show();
     $("#divContatos").hide();
     $("#navMenu").show();
+    $("#divCarrossel").show();
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").addClass("ativo");
@@ -69,6 +73,7 @@ $(".miCon").click(function(){
     $("#divLocalizacao").hide();
     $("#divContatos").show();
     $("#navMenu").show();
+    $("#divCarrossel").show();
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");

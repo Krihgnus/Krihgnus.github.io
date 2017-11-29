@@ -20,10 +20,53 @@
             <li class="miLoc menuItem">Localização</li>
         </ul>
     </nav>
-    <div id="divCarrossel" class="carousel-slide" data-ride="carousel">
+    <div id="divCarrossel" class="carousel slide" data-ride="carousel" data-interval="5000">
         <ol class="carousel-indicators">
-            <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
+            <li data-target="#divCarrossel" data-slide-to="0" class="active"></li>
+            <li data-target="#divCarrossel" data-slide-to="1"></li>
+            <li data-target="#divCarrossel" data-slide-to="2"></li>
+            <li data-target="#divCarrossel" data-slide-to="3"></li>
         </ol>
+        <div class="carousel-inner">
+
+            <div class="item active">
+                <img src="imagens/verde.jpg" alt="#" style="height: 400px; width: 100%;">
+                <div class="carousel-caption">
+                    <h3> Pizzabor </h3>
+                    <p> 20 Anos! </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="imagens/verde.jpg" alt="#" style="height: 400px; width: 100%;">
+                <div class="carousel-caption">
+                    <p> Mais de 50 opções de pizza! </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="imagens/verde.jpg" alt="#" style="height: 400px; width: 100%;">
+                <div class="carousel-caption">
+                    <p> Ligue: 3272-2323 </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="imagens/verde.jpg" alt="#" style="height: 400px; width: 100%;">
+                <div class="carousel-caption">
+                    <p> Rua Frontino Vieira, 324 </p>
+                </div>
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#divCarrossel" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="right carousel-control" href="#divCarrossel" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
     </div>
     <div id="divInicio">
         <ul>
@@ -47,6 +90,8 @@
         <p> LOCALIZACAO </p>
     </div>
     <script src="vendor/jquery.js"></script>
+    <script src="vendor/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

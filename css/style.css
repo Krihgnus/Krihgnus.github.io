@@ -31,6 +31,12 @@ ul{
     padding-bottom: 25px;
     padding-top: 25px;
 }
+.carousel-inner{
+    height: 100%;
+}
+.item{
+    height: 100%;
+}
 
 /* ID's */
 #divInicio{
@@ -62,12 +68,11 @@ ul{
     background-size: 100% 100%;
 }
 #divCarrossel{
-    width: 500px;
-    position: absolute;
-    top: 150px;
-    left: 100px;
-    border: 5px solid black;
-    height: 250px;
+    width: 100%;
+    position: relative;
+    top: 60px;
+    height: 400px;
+    display: none;
 }
 
 /* ID's Concatenados */
