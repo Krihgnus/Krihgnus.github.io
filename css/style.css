@@ -1,0 +1,109 @@
+/* Fontes */
+@font-face{
+    font-family: ShadedLarch;
+    src: url("../fonts/ShadedLarch.ttf");
+}
+
+/* Tags */
+ul{
+    list-style-type: none;
+}
+
+/* Classes */
+.menuItem{
+    text-align: center;
+    font-family: ShadedLarch;
+    font-size: 30px;
+    float: left;
+    width: 20%;
+}
+.inativo{
+    padding-top:10px;
+    padding-bottom:10px;
+    height: 55px;
+}
+.ativo{
+    background-color: #fffdd0;
+    height: 90px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 5px solid black;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+/* ID's */
+#divInicio{
+    height: 950px;
+    background-image: url("../imagens/backgroundInicio.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#logoInicio{
+    width: 23%;
+    height: 50%;
+    position: relative;
+    top: 380px;
+    left: 50px;
+}
+#navMenu{
+    background-color: #D1D144;;
+    border-bottom: 5px solid black;
+    height: 60px;
+    display: none;
+}
+#logoMenu{
+    cursor: pointer;
+    float: left;
+    width: 20%;
+    height: 150px;
+    background-image: url("../imagens/logo2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#divCarrossel{
+    width: 500px;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    border: 5px solid black;
+    height: 250px;
+}
+
+/* ID's Concatenados */
+#divInicio>ul{
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    top: 5%;
+    left: 10%;
+    width: 35%;
+    height: 7%;
+}
+#divInicio>ul>li{
+    font-size: 30px;
+    font-family: ShadedLarch;
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding-top:15px;
+    padding-bottom:15px;
+    height: 100%;
+}
+#navMenu>ul{
+    padding: 0px;
+    margin: 0 auto;
+    width: 50%;
+    height: 150px;
+}
+
+/* Hovers */
+.inativo:hover{
+    cursor: pointer;
+    background-color: #fffdd0;
+}
+#divInicio>ul>li:hover{
+    cursor: pointer;
+    color: #fffdd0;
+    background-color: #AC3030;
+}
