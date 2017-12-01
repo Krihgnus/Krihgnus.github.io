@@ -31,12 +31,6 @@ ul{
     padding-bottom: 25px;
     padding-top: 25px;
 }
-.carousel-inner{
-    height: 100%;
-}
-.item{
-    height: 100%;
-}
 
 /* ID's */
 #divInicio{
@@ -44,13 +38,6 @@ ul{
     background-image: url("../imagens/backgroundInicio.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}
-#logoInicio{
-    width: 23%;
-    height: 50%;
-    position: relative;
-    top: 380px;
-    left: 50px;
 }
 #navMenu{
     background-color: #D1D144;;
@@ -74,8 +61,21 @@ ul{
     height: 400px;
     display: none;
 }
+#divCardapio{
+    display: none;
+    position: relative;
+    top: 60px;
+    height: 2480px;
+}
 
 /* ID's Concatenados */
+#divInicio>img{
+    width: 23%;
+    height: 50%;
+    position: relative;
+    top: 380px;
+    left: 50px;
+}
 #divInicio>ul{
     padding: 0px;
     margin: 0px;
