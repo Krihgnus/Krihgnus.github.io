@@ -3,10 +3,20 @@
     font-family: ShadedLarch;
     src: url("../fonts/ShadedLarch.ttf");
 }
+@font-face{
+    font-family: Philosopher;
+    src: url("../fonts/Philosopher.ttf");
+}
 
 /* Tags */
 ul{
     list-style-type: none;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
 }
 
 /* Classes */
@@ -30,6 +40,17 @@ ul{
     border-bottom: 5px solid black;
     padding-bottom: 25px;
     padding-top: 25px;
+}
+.abaMenu{
+    display: none;
+    position: relative;
+    top: 60px;
+}
+.abaTitulo{
+    text-align: center;
+    font-family: ShadedLarch;
+    font-size: 30px;
+    color: #AC3030;
 }
 
 /* ID's */
@@ -56,16 +77,14 @@ ul{
 }
 #divCarrossel{
     width: 100%;
-    position: relative;
-    top: 60px;
     height: 400px;
-    display: none;
 }
 #divCardapio{
-    display: none;
-    position: relative;
-    top: 60px;
     height: 2480px;
+}
+#divLocalizacao{
+    width: 100%;
+    height: 500px;
 }
 
 /* ID's Concatenados */
@@ -100,6 +119,18 @@ ul{
     margin: 0 auto;
     width: 50%;
     height: 150px;
+}
+#divCardapio>div>div>h4{
+    font-family: Philosopher;
+    color: #D1D144;
+}
+#divCardapio>div>div>p{
+    font-family: Philosopher;
+    color: gray;
+}
+#divCardapio>div>div>p>b{
+    font-family: Philosopher;
+    color: #AC3030;
 }
 
 /* Hovers */
