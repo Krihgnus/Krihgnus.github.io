@@ -55,6 +55,36 @@ iframe{
     padding-top: 53px;
     padding-bottom: 53px;
 }
+.removeIcon{
+    width: 18px;
+    height: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-image: url("../imagens/remover.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+}
+.addIcon{
+    width: 18px;
+    height: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-image: url("../imagens/adicionar.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+}
+.okIcon{
+    width: 18px;
+    height: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-image: url("../imagens/ok.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    float: left;
+}
 
 /* ID's */
 #divInicio{
@@ -93,10 +123,7 @@ iframe{
     padding-top: 30px;
 }
 #btPedido{
-    margin: 100px 40% 0px 40%;
-}
-#divPedido{
-    display: none;
+    margin: 20px 41.5% 0px 41.5%;
 }
 
 /* ID's Concatenados */
@@ -150,7 +177,29 @@ iframe{
 }
 #divContatos>div>div>p{
     font-family: Philosopher;
-    color: #f7941e;
+    color: #F58300;
+}
+#divContatos>h3{
+    text-align: center;
+    font-family: ShadedLarch;
+    font-size: 30px;
+    color: #F58300;
+    text-decoration: underline; 
+}
+#divPedido>div{
+    display: none;
+}
+#divPedido>div>p{
+    font-family: Philosopher;
+    float: left;
+    margin: 0px;
+    font-size: 14px;
+    color: #AC3030;
+}
+#divPedido>div>h3{
+    font-family: ShadedLarch;
+    font-size: 30px;
+    color: rgb(14, 99, 14);
 }
 
 /* Hovers */

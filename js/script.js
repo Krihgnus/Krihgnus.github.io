@@ -6,6 +6,7 @@ $(".miIni").click(function(){
     $("#divContatos").hide();
     $("#navMenu").hide();
     $("#divCarrossel").hide();
+    $("#divPedido").hide();
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -23,6 +24,7 @@ $(".miHis").click(function(){
     $("#divContatos").hide();
     $("#navMenu").show();
     $("#divCarrossel").show();
+    $("#divPedido").hide();
     $(".miHis").addClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -40,6 +42,7 @@ $(".miCar").click(function(){
     $("#divContatos").hide();
     $("#navMenu").show();
     $("#divCarrossel").show();
+    $("#divPedido").hide();
     $(".miHis").removeClass("ativo");
     $(".miCar").addClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -57,6 +60,7 @@ $(".miLoc").click(function(){
     $("#divContatos").hide();
     $("#navMenu").show();
     $("#divCarrossel").show();
+    $("#divPedido").hide();
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").addClass("ativo");
@@ -74,6 +78,7 @@ $(".miCon").click(function(){
     $("#divContatos").show();
     $("#navMenu").show();
     $("#divCarrossel").show();
+    $("#divPedido").hide();
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -85,7 +90,64 @@ $(".miCon").click(function(){
 });
 $("#btPedido").click(function(){
     $("#divContatos").hide();
-    $("#navMenu").hide();
     $("#divCarrossel").hide();
-    $("#divPedidos").show();
+    $(".miCon").addClass("inativo");
+    $(".miCon").removeClass("ativo");
+    $("#divPedido").show();
+    $("#divTamanhos").show();
+});
+$("#checkPequena").click(function(){
+    $("#checkPequena").addClass("okIcon");
+    $("#checkMedia").removeClass("okIcon");
+    $("#checkFamilia").removeClass("okIcon");
+    $("#checkGigante").removeClass("okIcon");
+    $("#checkPequena").removeClass("removeIcon");
+    $("#checkMedia").addClass("removeIcon");
+    $("#checkFamilia").addClass("removeIcon");
+    $("#checkGigante").addClass("removeIcon");
+});
+$("#checkMedia").click(function(){
+    $("#checkPequena").removeClass("okIcon");
+    $("#checkMedia").addClass("okIcon");
+    $("#checkFamilia").removeClass("okIcon");
+    $("#checkGigante").removeClass("okIcon");
+    $("#checkPequena").addClass("removeIcon");
+    $("#checkMedia").removeClass("removeIcon");
+    $("#checkFamilia").addClass("removeIcon");
+    $("#checkGigante").addClass("removeIcon");
+});
+$("#checkFamilia").click(function(){
+    $("#checkPequena").removeClass("okIcon");
+    $("#checkMedia").removeClass("okIcon");
+    $("#checkFamilia").addClass("okIcon");
+    $("#checkGigante").removeClass("okIcon");
+    $("#checkPequena").addClass("removeIcon");
+    $("#checkMedia").addClass("removeIcon");
+    $("#checkFamilia").removeClass("removeIcon");
+    $("#checkGigante").addClass("removeIcon");
+});
+$("#checkGigante").click(function(){
+    $("#checkPequena").removeClass("okIcon");
+    $("#checkMedia").removeClass("okIcon");
+    $("#checkFamilia").removeClass("okIcon");
+    $("#checkGigante").addClass("okIcon");
+    $("#checkPequena").addClass("removeIcon");
+    $("#checkMedia").addClass("removeIcon");
+    $("#checkFamilia").addClass("removeIcon");
+    $("#checkGigante").removeClass("removeIcon");
+});
+$("#btRemSabor1").click(function(){
+    $("#pSabor1").text("Primeiro Sabor");
+});
+$("#btRemSabor2").click(function(){
+    $("#pSabor2").text("Segundo Sabor");
+});
+$("#btRemSabor3").click(function(){
+    $("#pSabor3").text("Terceiro Sabor");
+});
+$("#btRemSabor4").click(function(){
+    $("#pSabor4").text("Quarto Sabor");
+});
+$("#btRemAdi").click(function(){
+    $("#pAdicional").text("Adicional");
 });
