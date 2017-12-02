@@ -16,7 +16,6 @@ iframe{
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    display: block;
 }
 
 /* Classes */
@@ -52,6 +51,10 @@ iframe{
     font-size: 30px;
     color: #AC3030;
 }
+.contDes{
+    padding-top: 53px;
+    padding-bottom: 53px;
+}
 
 /* ID's */
 #divInicio{
@@ -85,6 +88,15 @@ iframe{
 #divLocalizacao{
     width: 100%;
     height: 500px;
+}
+#divContatos{
+    padding-top: 30px;
+}
+#btPedido{
+    margin: 100px 40% 0px 40%;
+}
+#divPedido{
+    display: none;
 }
 
 /* ID's Concatenados */
@@ -131,6 +143,14 @@ iframe{
 #divCardapio>div>div>p>b{
     font-family: Philosopher;
     color: #AC3030;
+}
+#divContatos>div>div>img{
+    width: 100%;
+    height: 100%;
+}
+#divContatos>div>div>p{
+    font-family: Philosopher;
+    color: #f7941e;
 }
 
 /* Hovers */

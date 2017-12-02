@@ -83,3 +83,9 @@ $(".miCon").click(function(){
     $(".miLoc").addClass("inativo");
     $(".miCon").removeClass("inativo");
 });
+$("#btPedido").click(function(){
+    $("#divContatos").hide();
+    $("#navMenu").hide();
+    $("#divCarrossel").hide();
+    $("#divPedidos").show();
+});
