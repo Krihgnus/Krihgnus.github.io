@@ -156,6 +156,8 @@
         <p><b>Coca-Cola</b> (Lata)</p>
         <p><b>Coca-Cola</b> (2 Litros)</p>
         <p><b>Guaraná</b> (2 Litros)</p>
+        <hr>
+        <h5>Copy Right Pizzabor</h5>
     </div>
     <div class="abaMenu container" id="divContatos">
         <div class="row">
@@ -182,14 +184,82 @@
             </div>
         </div>
         <h3>Aceitamos Reservas!</h3>
-        <button class="btn btn-lg btn-warning" id="btPedido">Calcule seu Pedido</button>
+        <button class="btn btn-lg btn-warning btCentral" id="btPedido">Calcule seu Pedido</button>
     </div>
     <div class="abaMenu" id="divLocalizacao">
         <h3 class="abaTitulo">Onde Estamos?</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.6083223816117!2d-52.38044944897607!3d-31.75389038120118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9511b59515b8b523%3A0x59f45878c57bf0cc!2sPizzabor!5e0!3m2!1spt-BR!2sbr!4v1512148667360"
             width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-    <div class="container abaMenu" id="divPedido">PEDIDO</div>
+    <div class="container abaMenu" id="divPedido">
+        <div>
+            <h3 class="abaTitulo">Pizza</h3>
+            <ul>
+                <li>
+                    <span class="removeIcon tamanhoIcon" id="rdPequena"></span>
+                    <p>Pequena</p>
+                </li>
+                <li>
+                    <span class="removeIcon tamanhoIcon" id="rdMedia"></span>
+                    <p>Média</p>
+                </li>
+                <li>
+                    <span class="removeIcon tamanhoIcon" id="rdGrande"></span>
+                    <p>Grande</p>
+                </li>
+                <li>
+                    <span class="removeIcon tamanhoIcon" id="rdGigante"></span>
+                    <p>Gigante</p>
+                </li>
+            </ul>
+        </div>
+        <div id="divAdicionais">
+            <h3 class="abaTitulo">Adicionais</h3>
+            <ul>
+                <li>
+                    <span class="removeIcon adicionalIcon" id="addP1"></span>
+                    <p>Borda de Catupiry<b> (R$ 2,00)</b></p>
+                </li>
+                <li>
+                    <span class="removeIcon adicionalIcon" id="addP2"></span>
+                    <p>Borda Mista<b> (R$ 2,50)</b></p>
+                </li>
+                <li>
+                    <span class="removeIcon adicionalIcon" id="addP3"></span>
+                    <p>Adicional de Catupiry<b> (R$ 1,50)</b></p>
+                </li>
+                <li>
+                    <span class="removeIcon adicionalIcon" id="addP4"></span>
+                    <p>Adicional de Cheddar<b> (R$ 2,50)</b></p>
+                </li>
+                <li>
+                    <span class="removeIcon adicionalIcon" id="addP5"></span>
+                    <p>Borda e Adicional de Catupiry<b> (R$ 3,00)</b></p>
+                </li>
+                <li>
+                    <span class="removeIcon adicionalIcon" id="addP6"></span>
+                    <p>Borda e Adicional de Cheddar<b> (R$ 4,00)</b></p>
+                </li>
+                <li>
+                    <span class="removeIcon adicionalIcon" id="nadaP"></span>
+                    <p>Nenhum</p>
+                </li>
+            </ul>
+            <h4 id="precoPizza">Valor: R$0,00</h4>
+            <button class="btn btn-success" id="btAddPizza">Adicionar ao Carrinho</button>
+        </div>
+        <div>
+            <h3 class="abaTitulo">Bebidas</h3>
+            <span class="addIcon"></span>
+            <p>Coca-Cola<b> (Lata)</b></p>
+            <span class="addIcon"></span>
+            <p>Coca-Cola<b> (2 Litros)</b></p>
+            <span class="addIcon"></span>
+            <p>Guaraná<b> (2 Litros)</b></p>
+        </div>
+        <hr>
+        <h5>Preços Ilustrativos</h5>
+    </div>
     <script src="vendor/jquery.js"></script>
     <script src="vendor/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
