@@ -49,7 +49,7 @@ iframe{
     text-align: center;
     font-family: ShadedLarch;
     font-size: 30px;
-    color: #AC3030;
+    color: #11802D;
 }
 .contDes{
     padding-top: 53px;
@@ -102,7 +102,7 @@ iframe{
 #logoMenu{
     cursor: pointer;
     float: left;
-    width: 20%;
+    width: 160px;
     height: 150px;
     background-image: url("../imagens/logo2.png");
     background-repeat: no-repeat;
@@ -113,7 +113,7 @@ iframe{
     height: 400px;
 }
 #divCardapio{
-    height: 2480px;
+    height: 2322px;
 }
 #divLocalizacao{
     width: 100%;
@@ -156,18 +156,15 @@ iframe{
 #navMenu>ul{
     padding: 0px;
     margin: 0 auto;
-    width: 50%;
+    width: 75%;
     height: 150px;
 }
-#divCardapio>div>div>h4{
-    font-family: Philosopher;
-    color: #D1D144;
-}
-#divCardapio>div>div>p{
+#divCardapio>p{
     font-family: Philosopher;
     color: gray;
+    text-align: center;
 }
-#divCardapio>div>div>p>b{
+#divCardapio>p>b{
     font-family: Philosopher;
     color: #AC3030;
 }
@@ -185,21 +182,6 @@ iframe{
     font-size: 30px;
     color: #F58300;
     text-decoration: underline; 
-}
-#divPedido>div{
-    display: none;
-}
-#divPedido>div>p{
-    font-family: Philosopher;
-    float: left;
-    margin: 0px;
-    font-size: 14px;
-    color: #AC3030;
-}
-#divPedido>div>h3{
-    font-family: ShadedLarch;
-    font-size: 30px;
-    color: rgb(14, 99, 14);
 }
 
 /* Hovers */

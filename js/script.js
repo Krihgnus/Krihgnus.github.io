@@ -94,60 +94,21 @@ $("#btPedido").click(function(){
     $(".miCon").addClass("inativo");
     $(".miCon").removeClass("ativo");
     $("#divPedido").show();
-    $("#divTamanhos").show();
 });
-$("#checkPequena").click(function(){
-    $("#checkPequena").addClass("okIcon");
-    $("#checkMedia").removeClass("okIcon");
-    $("#checkFamilia").removeClass("okIcon");
-    $("#checkGigante").removeClass("okIcon");
-    $("#checkPequena").removeClass("removeIcon");
-    $("#checkMedia").addClass("removeIcon");
-    $("#checkFamilia").addClass("removeIcon");
-    $("#checkGigante").addClass("removeIcon");
-});
-$("#checkMedia").click(function(){
-    $("#checkPequena").removeClass("okIcon");
-    $("#checkMedia").addClass("okIcon");
-    $("#checkFamilia").removeClass("okIcon");
-    $("#checkGigante").removeClass("okIcon");
-    $("#checkPequena").addClass("removeIcon");
-    $("#checkMedia").removeClass("removeIcon");
-    $("#checkFamilia").addClass("removeIcon");
-    $("#checkGigante").addClass("removeIcon");
-});
-$("#checkFamilia").click(function(){
-    $("#checkPequena").removeClass("okIcon");
-    $("#checkMedia").removeClass("okIcon");
-    $("#checkFamilia").addClass("okIcon");
-    $("#checkGigante").removeClass("okIcon");
-    $("#checkPequena").addClass("removeIcon");
-    $("#checkMedia").addClass("removeIcon");
-    $("#checkFamilia").removeClass("removeIcon");
-    $("#checkGigante").addClass("removeIcon");
-});
-$("#checkGigante").click(function(){
-    $("#checkPequena").removeClass("okIcon");
-    $("#checkMedia").removeClass("okIcon");
-    $("#checkFamilia").removeClass("okIcon");
-    $("#checkGigante").addClass("okIcon");
-    $("#checkPequena").addClass("removeIcon");
-    $("#checkMedia").addClass("removeIcon");
-    $("#checkFamilia").addClass("removeIcon");
-    $("#checkGigante").removeClass("removeIcon");
-});
-$("#btRemSabor1").click(function(){
-    $("#pSabor1").text("Primeiro Sabor");
-});
-$("#btRemSabor2").click(function(){
-    $("#pSabor2").text("Segundo Sabor");
-});
-$("#btRemSabor3").click(function(){
-    $("#pSabor3").text("Terceiro Sabor");
-});
-$("#btRemSabor4").click(function(){
-    $("#pSabor4").text("Quarto Sabor");
-});
-$("#btRemAdi").click(function(){
-    $("#pAdicional").text("Adicional");
+var isBig = true;
+$(window).scroll(function () {
+    var position = $(window).scrollTop();
+    if(position > 300 && isBig){
+        isBig = false;
+        $("#logoMenu").animate({
+            width: 90, height: 55
+        }, "fast");
+    }
+    if(position < 300 && !isBig){
+        isBig = true;
+            $("#logoMenu").animate({
+                width: 160, height: 150
+            }, "fast");
+        
+    }
 });
