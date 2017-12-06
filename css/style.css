@@ -75,16 +75,6 @@ h5{
     background-size: 100% 100%;
     float: left;
 }
-.addIcon{
-    width: 22px;
-    height: 20px;
-    margin-right: 10px;
-    cursor: pointer;
-    background-image: url("../imagens/adicionar.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    float: left;
-}
 .okIcon{
     width: 22px;
     height: 20px;
@@ -94,6 +84,29 @@ h5{
     background-size: 100% 100%;
     float: left;
 }
+.pizza-card{
+    width: 340px;
+    float: left;
+    margin: 20px;
+}
+.pizza-img{
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+}
+.card-title{
+    text-align: center;
+    color: #AC3030;
+    font-family: ShadedLarch;
+}
+.card-text{
+    font-family: Philosopher;
+    color: gray;
+    text-align: center;
+}
+.btSabor{
+    margin: 0px 28% 0px 28%;
+}
 
 /* ID's */
 #divInicio{
@@ -101,6 +114,20 @@ h5{
     background-image: url("../imagens/backgroundInicio.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+#divCarrossel{
+    width: 100%;
+    height: 500px;
+}
+#divCardapio{
+    height: 1254px;
+}
+#divLocalizacao{
+    width: 100%;
+    height: 500px;
+}
+#divContatos{
+    padding-top: 30px;
 }
 #navMenu{
     background-color: #D1D144;;
@@ -111,42 +138,17 @@ h5{
 #logoMenu{
     cursor: pointer;
     float: left;
-    width: 160px;
-    height: 150px;
-    background-image: url("../imagens/logo2.png");
+    width: 20%;
+    height: 200px;
+    background-image: url("../imagens/logo.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-#divCarrossel{
-    width: 100%;
-    height: 400px;
+#pizzasSalgadas{
+    height: 3550px;
 }
-#divCardapio{
-    height: 2322px;
-}
-#divLocalizacao{
-    width: 100%;
-    height: 500px;
-}
-#divContatos{
-    padding-top: 30px;
-}
-#btPedido{
-    margin: 20px 41.5% 0px 41.5%;
-}
-#divPedido{
-    top: 150px;
-}
-#precoPizza{
-    text-align: center;
-    color: #AC3030;
-    font-family: Philosopher;
-}
-#btAddPizza{
-    display: none;
-}
-#divAdicionais{
-    display: none;
+#pizzasDoces{
+    height: 1000px;
 }
 
 /* ID's Concatenados */
@@ -179,17 +181,8 @@ h5{
 #navMenu>ul{
     padding: 0px;
     margin: 0 auto;
-    width: 75%;
+    width: 60%;
     height: 150px;
-}
-#divCardapio>p{
-    font-family: Philosopher;
-    color: gray;
-    text-align: center;
-}
-#divCardapio>p>b{
-    font-family: Philosopher;
-    color: #AC3030;
 }
 #divContatos>div>div>img{
     width: 100%;
@@ -206,31 +199,15 @@ h5{
     color: #F58300;
     text-decoration: underline; 
 }
-#divPedido>div>p{
-    font-family: Philosopher;
-    color: #F58300;
-    font-size: 18px;
+#divHistoria>p{
+    font-family: Phlilosopher;
+    color: gray;
+    font-size: 30px;
 }
-#divPedido>div>p>b{
-    color: gray; 
-}
-#divPedido>div>ul{
-    padding: 0px;
-    width: 100%;
-    height: 150px;
-}
-#divPedido>div>ul>li{
-    float: left;
-    width: 33.3%;
-    height: 50px;
-}
-#divPedido>div>ul>li>p{
-    font-family: Philosopher;
-    color: #F58300;
-    font-size: 18px;
-}
-#divPedido>div>ul>li>p>b{
-    color: gray; 
+#divHistoria>p>b{
+    font-size: 50px;
+    font-family: ShadedLarch;
+    color: #AC3030;
 }
 
 /* Hovers */

@@ -6,7 +6,6 @@ $(".miIni").click(function(){
     $("#divContatos").hide();
     $("#navMenu").hide();
     $("#divCarrossel").hide();
-    $("#divPedido").hide();
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -24,7 +23,6 @@ $(".miHis").click(function(){
     $("#divContatos").hide();
     $("#navMenu").show();
     $("#divCarrossel").show();
-    $("#divPedido").hide();
     $(".miHis").addClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -42,7 +40,6 @@ $(".miCar").click(function(){
     $("#divContatos").hide();
     $("#navMenu").show();
     $("#divCarrossel").show();
-    $("#divPedido").hide();
     $(".miHis").removeClass("ativo");
     $(".miCar").addClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -60,7 +57,6 @@ $(".miLoc").click(function(){
     $("#divContatos").hide();
     $("#navMenu").show();
     $("#divCarrossel").show();
-    $("#divPedido").hide();
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").addClass("ativo");
@@ -78,7 +74,6 @@ $(".miCon").click(function(){
     $("#divContatos").show();
     $("#navMenu").show();
     $("#divCarrossel").show();
-    $("#divPedido").hide();
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -87,243 +82,4 @@ $(".miCon").click(function(){
     $(".miCar").addClass("inativo");
     $(".miLoc").addClass("inativo");
     $(".miCon").removeClass("inativo");
-});
-$("#btPedido").click(function(){
-    $("#divContatos").hide();
-    $("#divCarrossel").hide();
-    $(".miCon").addClass("inativo");
-    $(".miCon").removeClass("ativo");
-    $("#divPedido").show();
-    $("#divAdicionais").hide();
-    $("#rdPequena").removeClass("okIcon");
-    $("#rdMedia").removeClass("okIcon");
-    $("#rdGrande").removeClass("okIcon");
-    $("#rdGigante").removeClass("okIcon");
-    $("#rdPequena").addClass("removeIcon");
-    $("#rdMedia").addClass("removeIcon");
-    $("#rdGrande").addClass("removeIcon");
-    $("#rdGigante").addClass("removeIcon");
-});
-var somaPizza;
-$("#rdPequena").click(function(){
-    $("#rdPequena").addClass("okIcon");
-    $("#rdMedia").removeClass("okIcon");
-    $("#rdGrande").removeClass("okIcon");
-    $("#rdGigante").removeClass("okIcon");
-    $("#rdPequena").removeClass("removeIcon");
-    $("#rdMedia").addClass("removeIcon");
-    $("#rdGrande").addClass("removeIcon");
-    $("#rdGigante").addClass("removeIcon");
-    somaPizza = 20;
-    $("#precoPizza").text("Valor: R$ " + somaPizza.toFixed(2));
-});
-$("#rdMedia").click(function(){
-    $("#rdPequena").removeClass("okIcon");
-    $("#rdMedia").addClass("okIcon");
-    $("#rdGrande").removeClass("okIcon");
-    $("#rdGigante").removeClass("okIcon");
-    $("#rdPequena").addClass("removeIcon");
-    $("#rdMedia").removeClass("removeIcon");
-    $("#rdGrande").addClass("removeIcon");
-    $("#rdGigante").addClass("removeIcon");
-    somaPizza = 40;
-    $("#precoPizza").text("Valor: R$ " + somaPizza.toFixed(2));
-});
-$("#rdGrande").click(function(){
-    $("#rdPequena").removeClass("okIcon");
-    $("#rdMedia").removeClass("okIcon");
-    $("#rdGrande").addClass("okIcon");
-    $("#rdGigante").removeClass("okIcon");
-    $("#rdPequena").addClass("removeIcon");
-    $("#rdMedia").addClass("removeIcon");
-    $("#rdGrande").removeClass("removeIcon");
-    $("#rdGigante").addClass("removeIcon");
-    somaPizza = 50;
-    $("#precoPizza").text("Valor: R$ " + somaPizza.toFixed(2));
-});
-$("#rdGigante").click(function(){
-    $("#rdPequena").removeClass("okIcon");
-    $("#rdMedia").removeClass("okIcon");
-    $("#rdGrande").removeClass("okIcon");
-    $("#rdGigante").addClass("okIcon");
-    $("#rdPequena").addClass("removeIcon");
-    $("#rdMedia").addClass("removeIcon");
-    $("#rdGrande").addClass("removeIcon");
-    $("#rdGigante").removeClass("removeIcon");
-    somaPizza = 70;
-    $("#precoPizza").text("Valor: R$ " + somaPizza.toFixed(2));
-});
-$(".tamanhoIcon").click(function(){
-    $("#divAdicionais").show();
-    $("#btAddPizza").hide();
-    $("#addP1").removeClass("okIcon");
-    $("#addP2").removeClass("okIcon");
-    $("#addP3").removeClass("okIcon");
-    $("#addP4").removeClass("okIcon");
-    $("#addP5").removeClass("okIcon");
-    $("#addP6").removeClass("okIcon");
-    $("#nadaP").removeClass("okIcon");
-    $("#addP1").addClass("removeIcon");
-    $("#addP2").addClass("removeIcon");
-    $("#addP3").addClass("removeIcon");
-    $("#addP4").addClass("removeIcon");
-    $("#addP5").addClass("removeIcon");
-    $("#addP6").addClass("removeIcon");
-    $("#nadaP").addClass("removeIcon");
-});
-$("#addP1").click(function(){
-    $("#addP1").addClass("okIcon");
-    $("#addP2").removeClass("okIcon");
-    $("#addP3").removeClass("okIcon");
-    $("#addP4").removeClass("okIcon");
-    $("#addP5").removeClass("okIcon");
-    $("#addP6").removeClass("okIcon");
-    $("#nadaP").removeClass("okIcon");
-    $("#addP1").removeClass("removeIcon");
-    $("#addP2").addClass("removeIcon");
-    $("#addP3").addClass("removeIcon");
-    $("#addP4").addClass("removeIcon");
-    $("#addP5").addClass("removeIcon");
-    $("#addP6").addClass("removeIcon");
-    $("#nadaP").addClass("removeIcon");
-    somaPizza = (Math.floor(somaPizza/10)*10) + 2;
-    $("#precoPizza").text("Valor: R$ " + somaPizza.toFixed(2));
-});
-$("#addP2").click(function(){
-    $("#addP1").removeClass("okIcon");
-    $("#addP2").addClass("okIcon");
-    $("#addP3").removeClass("okIcon");
-    $("#addP4").removeClass("okIcon");
-    $("#addP5").removeClass("okIcon");
-    $("#addP6").removeClass("okIcon");
-    $("#nadaP").removeClass("okIcon");
-    $("#addP1").addClass("removeIcon");
-    $("#addP2").removeClass("removeIcon");
-    $("#addP3").addClass("removeIcon");
-    $("#addP4").addClass("removeIcon");
-    $("#addP5").addClass("removeIcon");
-    $("#addP6").addClass("removeIcon");
-    $("#nadaP").addClass("removeIcon");
-    somaPizza = (Math.floor(somaPizza/10)*10) + 2.50;
-    $("#precoPizza").text("Valor: R$ " + somaPizza.toFixed(2));
-});
-$("#addP3").click(function(){
-    $("#addP1").removeClass("okIcon");
-    $("#addP2").removeClass("okIcon");
-    $("#addP3").addClass("okIcon");
-    $("#addP4").removeClass("okIcon");
-    $("#addP5").removeClass("okIcon");
-    $("#addP6").removeClass("okIcon");
-    $("#nadaP").removeClass("okIcon");
-    $("#addP1").addClass("removeIcon");
-    $("#addP2").addClass("removeIcon");
-    $("#addP3").removeClass("removeIcon");
-    $("#addP4").addClass("removeIcon");
-    $("#addP5").addClass("removeIcon");
-    $("#addP6").addClass("removeIcon");
-    $("#nadaP").addClass("removeIcon");
-    somaPizza = (Math.floor(somaPizza/10)*10) + 1.50;
-    $("#precoPizza").text("Valor: R$ " + somaPizza.toFixed(2));
-});
-$("#addP4").click(function(){
-    $("#addP1").removeClass("okIcon");
-    $("#addP2").removeClass("okIcon");
-    $("#addP3").removeClass("okIcon");
-    $("#addP4").addClass("okIcon");
-    $("#addP5").removeClass("okIcon");
-    $("#addP6").removeClass("okIcon");
-    $("#nadaP").removeClass("okIcon");
-    $("#addP1").addClass("removeIcon");
-    $("#addP2").addClass("removeIcon");
-    $("#addP3").addClass("removeIcon");
-    $("#addP4").removeClass("removeIcon");
-    $("#addP5").addClass("removeIcon");
-    $("#addP6").addClass("removeIcon");
-    $("#nadaP").addClass("removeIcon");
-    somaPizza = (Math.floor(somaPizza/10)*10) + 2.50;
-    $("#precoPizza").text("Valor: R$ " + somaPizza.toFixed(2));
-});
-$("#addP5").click(function(){
-    $("#addP1").removeClass("okIcon");
-    $("#addP2").removeClass("okIcon");
-    $("#addP3").removeClass("okIcon");
-    $("#addP4").removeClass("okIcon");
-    $("#addP5").addClass("okIcon");
-    $("#addP6").removeClass("okIcon");
-    $("#nadaP").removeClass("okIcon");
-    $("#addP1").addClass("removeIcon");
-    $("#addP2").addClass("removeIcon");
-    $("#addP3").addClass("removeIcon");
-    $("#addP4").addClass("removeIcon");
-    $("#addP5").removeClass("removeIcon");
-    $("#addP6").addClass("removeIcon");
-    $("#nadaP").addClass("removeIcon");
-    somaPizza = (Math.floor(somaPizza/10)*10) + 3;
-    $("#precoPizza").text("Valor: R$ " + somaPizza.toFixed(2));
-});
-$("#addP6").click(function(){
-    $("#addP1").removeClass("okIcon");
-    $("#addP2").removeClass("okIcon");
-    $("#addP3").removeClass("okIcon");
-    $("#addP4").removeClass("okIcon");
-    $("#addP5").removeClass("okIcon");
-    $("#addP6").addClass("okIcon");
-    $("#nadaP").removeClass("okIcon");
-    $("#addP1").addClass("removeIcon");
-    $("#addP2").addClass("removeIcon");
-    $("#addP3").addClass("removeIcon");
-    $("#addP4").addClass("removeIcon");
-    $("#addP5").addClass("removeIcon");
-    $("#addP6").removeClass("removeIcon");
-    $("#nadaP").addClass("removeIcon");
-    somaPizza = (Math.floor(somaPizza/10)*10) + 4 ;
-    $("#precoPizza").text("Valor: R$ " + somaPizza.toFixed(2));
-});
-$("#nadaP").click(function(){
-    $("#addP1").removeClass("okIcon");
-    $("#addP2").removeClass("okIcon");
-    $("#addP3").removeClass("okIcon");
-    $("#addP4").removeClass("okIcon");
-    $("#addP5").removeClass("okIcon");
-    $("#addP6").removeClass("okIcon");
-    $("#nadaP").addClass("okIcon");
-    $("#addP1").addClass("removeIcon");
-    $("#addP2").addClass("removeIcon");
-    $("#addP3").addClass("removeIcon");
-    $("#addP4").addClass("removeIcon");
-    $("#addP5").addClass("removeIcon");
-    $("#addP6").addClass("removeIcon");
-    $("#nadaP").removeClass("removeIcon");
-    somaPizza = (Math.floor(somaPizza/10)*10);
-    $("#precoPizza").text("Valor: R$ " + somaPizza.toFixed(2));
-});
-$(".adicionalIcon").click(function(){
-    $("#btAddPizza").show();
-});
-$("#btAddPizza").click(function(){
-    $("#divAdicionais").hide();
-    $("#rdPequena").addClass("removeIcon");
-    $("#rdMedia").addClass("removeIcon");
-    $("#rdGrande").addClass("removeIcon");
-    $("#rdGigante").addClass("removeIcon");
-    $("#rdPequena").removeClass("okIcon");
-    $("#rdMedia").removeClass("okIcon");
-    $("#rdGrande").removeClass("okIcon");
-    $("#rdGigante").removeClass("okIcon");
-});
-var isBig = true;
-$(window).scroll(function () {
-    var position = $(window).scrollTop();
-    if(position > 300 && isBig){
-        isBig = false;
-        $("#logoMenu").animate({
-            width: 70, height: 55
-        }, "fast");
-    }
-    if(position < 300 && !isBig){
-        isBig = true;
-            $("#logoMenu").animate({
-                width: 160, height: 150
-            }, "fast");
-    }
 });

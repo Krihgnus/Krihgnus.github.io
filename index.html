@@ -14,14 +14,14 @@
 <body>
     <nav id="navMenu" class="navbar navbar-fixed-top">
         <ul>
+            <li class="miIni" id="logoMenu"></li>
             <li class="miHis menuItem">História</li>
             <li class="miCar menuItem">Cardápio</li>
-            <li class="miIni" id="logoMenu"></li>
             <li class="miCon menuItem">Contatos</li>
             <li class="miLoc menuItem">Localização</li>
         </ul>
     </nav>
-    <div id="divCarrossel" class="carousel slide abaMenu" data-ride="carousel" data-interval="5000">
+    <div id="divCarrossel" class="carousel slide abaMenu" data-ride="carousel" data-interval="4500">
         <ol class="carousel-indicators">
             <li data-target="#divCarrossel" data-slide-to="0" class="active"></li>
             <li data-target="#divCarrossel" data-slide-to="1"></li>
@@ -31,7 +31,7 @@
         <div class="carousel-inner">
 
             <div class="item active">
-                <img src="imagens/verde.jpg" alt="#" style="height: 400px; width: 100%;">
+                <img src="imagens/verde.jpg" alt="#" style="height: 500px; width: 100%;">
                 <div class="carousel-caption">
                     <h3> Pizzabor </h3>
                     <p> 20 Anos! </p>
@@ -39,21 +39,21 @@
             </div>
 
             <div class="item">
-                <img src="imagens/verde.jpg" alt="#" style="height: 400px; width: 100%;">
+                <img src="imagens/carouselImage2.jpg" alt="#" style="height: 500px; width: 100%;">
                 <div class="carousel-caption">
-                    <p> Mais de 50 opções de pizzas! </p>
+                    <p> Mais de 20 Sabores! </p>
                 </div>
             </div>
 
             <div class="item">
-                <img src="imagens/verde.jpg" alt="#" style="height: 400px; width: 100%;">
+                <img src="imagens/verde.jpg" alt="#" style="height: 500px; width: 100%;">
                 <div class="carousel-caption">
                     <p> Ligue: 3272-2323 </p>
                 </div>
             </div>
 
             <div class="item">
-                <img src="imagens/verde.jpg" alt="#" style="height: 400px; width: 100%;">
+                <img src="imagens/verde.jpg" alt="#" style="height: 500px; width: 100%;">
                 <div class="carousel-caption">
                     <p> Rua Frontino Vieira, 324 </p>
                 </div>
@@ -78,86 +78,302 @@
         </ul>
         <img src="imagens/logo.png">
     </div>
-    <div id="divHistoria">
-        <p> HISTORIA </p>
+    <div class="container abaMenu" id="divHistoria">
+        <h3 class="abaTitulo">Nossa História ...</h3>
+        <p><b>E</b>m 1997 nascia em Pelotas, no Rio Grande do Sul a Pizzabor. Uma pizzaria que veio para mudar o conceito de
+            tele-entrega.
+        </p><br>
+        <p><b>A</b>pós vasta pesquisa de mercado realizada junto as maiores metrópoles do país, um grupo de empresários decidiu
+            apostar nesse desafio.</p><br>
+        <p><b>A</b> Pizzabor, além do sistema de tele-entrega possibilita, ao cliente a degustação no próprio local.</p><br>
+        <p><b>N</b>ossas pizzas são preparadas com carinho no mais alto padrão de qualidade, por gente treinada e especializada.</p><br>
+        <hr>
+        <h5>Copyright Pizzabor</h5>
     </div>
     <div class="container abaMenu" id="divCardapio">
-        <h3 class="abaTitulo"> Pizzas Salgadas </h3>
-        <p><b>Alho e Óleo</b> (Molho, Alho, Óleo, Mussarela e Orégano)</p>
-        <p><b>A Moda da Casa</b> (Molho, Filé, Bacon, Cebola, Catupiry, Orégano e Mussarela)</p>
-        <p><b>Atum</b> (Molho, Atum, Mussarela e Orégano)</p>
-        <p><b>Azeitonas</b> (Molho, Azeitonas, Mussarela e Orégano)</p>
-        <p><b>Bacon</b> (Molho, Bacon, Cebola, Azeitonas, Mussarela e Orégano)</p>
-        <p><b>Baiacatu</b> (Molho, Calabresa Moída, Catupiry, Azeitonas, Mussarela e Orégano)</p>
-        <p><b>Basca</b> (Molho, Bacon, Catupiry, Tomate, Mussarela e Orégano)</p>
-        <p><b>Baiana</b> (Molho, Calabresa, Palmito, Pimenta, Pimentão, Mussarela e Orégano)</p>
-        <p><b>Brasileira</b> (Molho, Atum, Bacon, Ervilhas, Azeitonas, Ovo, Mussarela e Orégano)</p>
-        <p><b>Brócolis</b> (Molho, Brócolis, Mussarela e Orégano)</p>
-        <p><b>Caipira</b> (Molho, Frango, Bacon, Milho, Catupiry, Azeitonas, Mussarela e Orégano)</p>
-        <p><b>Calabresa</b> (Molho, Calabresa, Cebola, Azeitonas, Mussarela e Orégano)</p>
-        <p><b>Cancun</b> (Molho, Brócolis, Cebola, Catupiry, Azeitonas, Mussarela e Orégano)</p>
-        <p><b>Camarão</b> (Molho, Camarão, Mussarela e Orégano)</p>
-        <p><b>Catupiry</b> (Molho, Catupiry, Mussarela e Orégano)</p>
-        <p><b>Champignon</b> (Molho, Champignon, Mussarela e Orégano)</p>
-        <p><b>Chester</b> (Molho, Chester, Mussarela e Orégano)</p>
-        <p><b>Cheddar</b> (Molho, Cheddar, Mussarela e Orégano)</p>
-        <p><b>Coração</b> (Molho, Coração, Mussarela e Orégano)</p>
-        <p><b>Filé</b> (Molho, Filé, Mussarela e Orégano)</p>
-        <p><b>Filé Catupiry</b> (Molho, Filé, Catupiry, Mussarela e Orégano)</p>
-        <p><b>Frango</b> (Molho, Frango, Azeitonas, Mussarela e Orégano)</p>
-        <p><b>Frango Catupiry</b> (Molho, Frango, Catupiry, Mussarela e Orégano)</p>
-        <p><b>Fricassê de Frango</b> (Molho, Frango, Maionese, Catupiry, Milho, Azeitonas, Batata palha, Mussarela e Orégano)</p>
-        <p><b>Havaiana</b> (Molho, Abacaxi, Presunto, Mussarela e Orégano)</p>
-        <p><b>Italiana</b> (Molho, Salame italiano, Cebola, Azeitonas, Mussarela e Orégano)</p>
-        <p><b>Lombo</b> (Molho, Lombo, Azeitonas, Mussarela e Orégano)</p>
-        <p><b>Lombo com Abacaxi</b> (Molho, Lombo, Abacaxi, Mussarela e Orégano)</p>
-        <p><b>Marguerita</b> (Molho, Tomate, Manjericão, Parmesão, Mussarela e Orégano)</p>
-        <p><b>Milho</b> (Molho, Milho, Mussarela e Orégano)</p>
-        <p><b>Mista</b> (Molho, Presunto, Palmito, Tomate, Ovo, Azeitonas, Salame italiano, Mussarela e Orégano)</p>
-        <p><b>Mussarela</b> (Molho, Mussarela e Orégano)</p>
-        <p><b>Napolitana</b> (Molho, Presunto, Palmito, Tomate, Ervilhas, Azeitonas, Ovo, Mussarela e Orégano)</p>
-        <p><b>Paulista</b> (Molho, Ervilhas, Palmito, Milho, Mussarela e Orégano)</p>
-        <p><b>Palmito</b> (Molho, Palmito, Mussarela e Orégano)</p>
-        <p><b>Pepperoni</b> (Molho, Pepperoni, Azeitonas, Cebola, Mussarela e Orégano)</p>
-        <p><b>Pizzabor</b> (Molho, Lombo, Tomate, Palmito, , Ovo, Cebola, Azeitonas, Mussarela e Orégano)</p>
-        <p><b>Portuguesa</b> (Molho, Cebola, Tomate, Presunto, Pimentão, Ovo, Azeitonas, Mussarela e Orégano)</p>
-        <p><b>Presunto e Queijo</b> (Molho, Presunto, Mussarela e Orégano)</p>
-        <p><b>Provolone</b> (Molho, Provolone e Orégano)</p>
-        <p><b>Quatro Queijos</b> (Molho, Gorgonzola, Provolone, Parmesão, Mussarela e Orégano)</p>
-        <p><b>Cinco Queijos</b> (Molho, Gorgonzola, Provolone, Parmesão, Catupiry, Mussarela e Orégano)</p>
-        <p><b>Seis Queijos</b> (Molho, Gorgonzola, Provolone, Parmesão, Catupiry, Cheddar, Mussarela e Orégano)</p>
-        <p><b>Siciliana</b> (Molho, Champignon, Bacon, Azeitonas, Mussarela e Orégano)</p>
-        <p><b>Strogonoff de Carne</b> (Molho, Alcatra, Creme de leite, Mussarela e Orégano)</p>
-        <p><b>Strogonoff de Frango</b> (Molho, Frango, Azeitonas, Creme de leite, Mussarela e Orégano)</p>
-        <p><b>Romanesca</b> (Molho, Ervilhas, Bacon, Creme de leite, Mussarela e Orégano)</p>
-        <p><b>Tomates Secos</b> (Molho, Tomates secos, Rúcula, Mussarela e Orégano)</p>
-        <p><b>Vegetariana</b> (Molho, Cebola, Champignon, Pimentão, Brócolis, Palmito, Azeitonas, Mussarela e Orégano)</p>
-        <p><b>Veneza</b> (Molho, Palmito, Champignon, Bacon, Catupiry, Mussarela e Orégano)</p>
-        <h3 class="abaTitulo"> Pizzas Doces </h3>
-        <p><b>Banana com Canela</b> (Banana, Açúcar, Canela e Doce de leite)</p>
-        <p><b>Brigadeiro</b> (Chocolate, Leite condensado e Chocolate granulado)</p>
-        <p><b>Califórnia</b> (Pêssego, Abacaxi e Figo)</p>
-        <p><b>Chocolate</b> (Chocolate e Leite condensado)</p>
-        <p><b>Coco</b> (Coco e Leite condensado)</p>
-        <p><b>Doce de Leite</b> (Doce de leite)</p>
-        <p><b>Floresta Negra</b> (Bombons "Sonho de Valsa" e Leite condensado)</p>
-        <p><b>Prestígio</b> (Chocolate e Coco ralado)</p>
-        <p><b>Sensação</b> (Chocolate, Leite condensado e Morangos)</p>
-        <p><b>Serra Nevada</b> (Bombons "Ouro Branco" e Leite condensado)</p>
-        <p><b>M&M's</b> (Chocolate preto ou branco, M&M's e Leite condensado)</p>
-        <h3 class="abaTitulo"> Bordas e Adicionais </h3>
-        <p><b>Borda de Catupiry</b></p>
-        <p><b>Borda Mista</b> (Catupiry e Cheddar)</p>
-        <p><b>Adicional de Catupiry</b></p>
-        <p><b>Adicional de Cheddar</b></p>
-        <p><b>Borda e Adicional de Catupiry</b></p>
-        <p><b>Borda e Adicional de Cheddar</b></p>
-        <h3 class="abaTitulo"> Bebidas </h3>
-        <p><b>Coca-Cola</b> (Lata)</p>
-        <p><b>Coca-Cola</b> (2 Litros)</p>
-        <p><b>Guaraná</b> (2 Litros)</p>
+        <h3 class="abaTitulo">Salgadas</h3>
+        <div class="card-group" id="pizzasSalgadas">
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/modadaCasa.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">A Moda da Casa</h3>
+                    <p class="card-text">(Molho, Filé, Bacon, Cebola, Catupiry, Orégano e Mussarela)</p>
+                    <p class="card-text">R$ 34,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/bacon.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Bacon</h3>
+                    <p class="card-text">(Molho, Bacon, Cebola, Azeitonas, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 30,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/baiacatu.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Baiacatu</h3>
+                    <p class="card-text">(Molho, Calabresa Moída, Catupiry, Azeitonas, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 37,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/basca.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Basca</h3>
+                    <p class="card-text">(Molho, Bacon, Catupiry, Tomate, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 34,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/brasileira.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Brasileira</h3>
+                    <p class="card-text">(Molho, Atum, Bacon, Ervilhas, Azeitonas, Ovo, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 42,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/calabresa.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Calabresa</h3>
+                    <p class="card-text">(Molho, Calabresa, Cebola, Azeitonas, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 30,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/camarao.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Camarão</h3>
+                    <p class="card-text">(Molho, Camarão, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 30,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/cheddar.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Cheddar</h3>
+                    <p class="card-text">(Molho, Cheddar, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 22,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/coracao.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Coração</h3>
+                    <p class="card-text">(Molho, Coração, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 35,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/file.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Filé Catupiry</h3>
+                    <p class="card-text">(Molho, Filé, Catupiry, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 31,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/frango.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Frango Catupiry</h3>
+                    <p class="card-text">(Molho, Frango, Catupiry, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 27,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/napolitana.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Napolitana</h3>
+                    <p class="card-text">(Molho, Presunto, Palmito, Tomate, Ervilhas, Azeitonas, Ovo, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 40,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/paulista.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Paulista</h3>
+                    <p class="card-text">(Molho, Ervilhas, Palmito, Azeitonas, Milho, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 33,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/pepperoni.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Pepperoni</h3>
+                    <p class="card-text">(Molho, Pepperoni, Azeitonas, Cebola, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 35,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/pizzabor.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Pizzabor</h3>
+                    <p class="card-text">(Molho, Lombo, Tomate, Palmito, , Ovo, Cebola, Azeitonas, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 46,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/portuguesa.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Portuguesa</h3>
+                    <p class="card-text">(Molho, Cebola, Tomate, Presunto, Pimentão, Ovo, Azeitonas, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 39,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/queijos.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Seis Queijos</h3>
+                    <p class="card-text">(Molho, Gorgonzola, Provolone, Parmesão, Catupiry, Cheddar, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 27,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/siciliana.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Siciliana</h3>
+                    <p class="card-text">(Molho, Champignon, Bacon, Azeitonas, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 34,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/strogonoff.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Strogonoff</h3>
+                    <p class="card-text">(Molho, Alcatra, Creme de leite, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 38,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/vegetariana.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Vegetariana</h3>
+                    <p class="card-text">(Molho, Cebola, Champignon, Pimentão, Brócolis, Palmito, Azeitonas, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 43,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/lombo.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Lombo</h3>
+                    <p class="card-text">(Molho, Lombo, Azeitonas, Mussarela e Orégano)</p>
+                    <p class="card-text">R$ 30,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div><br>
+
+        <h3 class="abaTitulo">Doces</h3>
+        <div class="card-group" id="pizzasDoces">
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/brigadeiro.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Brigadeiro</h3>
+                    <p class="card-text">(Chocolate, Leite condensado e Chocolate granulado)</p>
+                    <p class="card-text">R$ 25,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/florestaNegra.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Floresta Negra</h3>
+                    <p class="card-text">(Bombons "Sonho de Valsa" e Leite condensado)</p>
+                    <p class="card-text">R$ 24,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/sensacao.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Sensação</h3>
+                    <p class="card-text">(Chocolate, Leite condensado e Morangos)</p>
+                    <p class="card-text">R$ 32,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/serraNevada.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Serra Nevada</h3>
+                    <p class="card-text">(Bombons "Ouro Branco" e Leite condensado)</p>
+                    <p class="card-text">R$ 24,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/MM.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">M&M's</h3>
+                    <p class="card-text">(Chocolate preto ou branco, M&M's e Leite condensado)</p>
+                    <p class="card-text">R$ 28,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/prestigio.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Prestígio</h3>
+                    <p class="card-text">(Chocolate, Coco ralado)</p>
+                    <p class="card-text">R$ 22,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div><br>
+
+        <h3 class="abaTitulo">Bebidas</h3>
+        <div class="card-group" id="bebidas">
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/lataCoca.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Coca-Cola</h3>
+                    <p class="card-text">(Lata)</p>
+                    <p class="card-text">R$ 3,50</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/coca2L.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Coca-Cola</h3>
+                    <p class="card-text">(2 Litros)</p>
+                    <p class="card-text">R$ 7,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+            <div class="card pizza-card">
+                <img class="card-image-top pizza-img" src="imagens/guarana.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Guaraná</h3>
+                    <p class="card-text">(2 Litros)</p>
+                    <p class="card-text">R$ 6,00</p>
+                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
         <hr>
-        <h5>Copy Right Pizzabor</h5>
+        <h5>Preços e Imagens Ilustrativas - Copyright Pizzabor</h5>
     </div>
     <div class="abaMenu container" id="divContatos">
         <div class="row">
@@ -184,81 +400,11 @@
             </div>
         </div>
         <h3>Aceitamos Reservas!</h3>
-        <button class="btn btn-lg btn-warning btCentral" id="btPedido">Calcule seu Pedido</button>
     </div>
     <div class="abaMenu" id="divLocalizacao">
         <h3 class="abaTitulo">Onde Estamos?</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3392.6083223816117!2d-52.38044944897607!3d-31.75389038120118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9511b59515b8b523%3A0x59f45878c57bf0cc!2sPizzabor!5e0!3m2!1spt-BR!2sbr!4v1512148667360"
             width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-    <div class="container abaMenu" id="divPedido">
-        <div>
-            <h3 class="abaTitulo">Pizza</h3>
-            <ul>
-                <li>
-                    <span class="removeIcon tamanhoIcon" id="rdPequena"></span>
-                    <p>Pequena</p>
-                </li>
-                <li>
-                    <span class="removeIcon tamanhoIcon" id="rdMedia"></span>
-                    <p>Média</p>
-                </li>
-                <li>
-                    <span class="removeIcon tamanhoIcon" id="rdGrande"></span>
-                    <p>Grande</p>
-                </li>
-                <li>
-                    <span class="removeIcon tamanhoIcon" id="rdGigante"></span>
-                    <p>Gigante</p>
-                </li>
-            </ul>
-        </div>
-        <div id="divAdicionais">
-            <h3 class="abaTitulo">Adicionais</h3>
-            <ul>
-                <li>
-                    <span class="removeIcon adicionalIcon" id="addP1"></span>
-                    <p>Borda de Catupiry<b> (R$ 2,00)</b></p>
-                </li>
-                <li>
-                    <span class="removeIcon adicionalIcon" id="addP2"></span>
-                    <p>Borda Mista<b> (R$ 2,50)</b></p>
-                </li>
-                <li>
-                    <span class="removeIcon adicionalIcon" id="addP3"></span>
-                    <p>Adicional de Catupiry<b> (R$ 1,50)</b></p>
-                </li>
-                <li>
-                    <span class="removeIcon adicionalIcon" id="addP4"></span>
-                    <p>Adicional de Cheddar<b> (R$ 2,50)</b></p>
-                </li>
-                <li>
-                    <span class="removeIcon adicionalIcon" id="addP5"></span>
-                    <p>Borda e Adicional de Catupiry<b> (R$ 3,00)</b></p>
-                </li>
-                <li>
-                    <span class="removeIcon adicionalIcon" id="addP6"></span>
-                    <p>Borda e Adicional de Cheddar<b> (R$ 4,00)</b></p>
-                </li>
-                <li>
-                    <span class="removeIcon adicionalIcon" id="nadaP"></span>
-                    <p>Nenhum</p>
-                </li>
-            </ul>
-            <h4 id="precoPizza">Valor: R$0,00</h4>
-            <button class="btn btn-success" id="btAddPizza">Adicionar ao Carrinho</button>
-        </div>
-        <div>
-            <h3 class="abaTitulo">Bebidas</h3>
-            <span class="addIcon"></span>
-            <p>Coca-Cola<b> (Lata)</b></p>
-            <span class="addIcon"></span>
-            <p>Coca-Cola<b> (2 Litros)</b></p>
-            <span class="addIcon"></span>
-            <p>Guaraná<b> (2 Litros)</b></p>
-        </div>
-        <hr>
-        <h5>Preços Ilustrativos</h5>
     </div>
     <script src="vendor/jquery.js"></script>
     <script src="vendor/popper.min.js"></script>
