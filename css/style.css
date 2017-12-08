@@ -92,7 +92,7 @@ h5{
 .pizza-img{
     width: 100%;
     height: 300px;
-    cursor: pointer;
+    border: 3px solid black;
 }
 .card-title{
     text-align: center;
@@ -145,10 +145,37 @@ h5{
     background-size: 100% 100%;
 }
 #pizzasSalgadas{
-    height: 3550px;
+    height: 3550px; 
 }
 #pizzasDoces{
     height: 1000px;
+}
+#bebidas{
+    height: 500px;
+}
+#spanCarrinho{
+    background-image: url("../imagens/carrinho.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    top: 570px;
+    width: 15%;
+    height: 70px;
+    display: none;
+    z-index: 2;
+}
+#divCarrinho{
+    position: absolute;
+    right: 0px;
+    top: 628px;
+    width: 11%;
+    height: 500px;
+    border: 2px solid black;
+    display: none;
+    z-index: 1;
+    float: right;
 }
 
 /* ID's Concatenados */
@@ -180,9 +207,9 @@ h5{
 }
 #navMenu>ul{
     padding: 0px;
-    margin: 0 auto;
+    margin-left: 5%;
     width: 60%;
-    height: 150px;
+    height: 200px;
 }
 #divContatos>div>div>img{
     width: 100%;
@@ -208,6 +235,27 @@ h5{
     font-size: 50px;
     font-family: ShadedLarch;
     color: #AC3030;
+}
+.modal-body>img{
+    width: 100%;
+    height: 400px;
+}
+.modal-body>p{
+    font-family: Philosopher;
+    text-align: center;
+    color: #AC3030;
+}
+.modal-body>ul{
+    height: 60px;
+    width: 100%;
+    padding: 0px;
+}
+.modal-body>ul>li{
+    width: 25%;
+    height: 30px;
+    float: left;
+    font-family: Philosopher;
+    color: gray;
 }
 
 /* Hovers */

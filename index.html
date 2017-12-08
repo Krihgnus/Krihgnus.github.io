@@ -80,17 +80,72 @@
     </div>
     <div class="container abaMenu" id="divHistoria">
         <h3 class="abaTitulo">Nossa História ...</h3>
-        <p><b>E</b>m 1997 nascia em Pelotas, no Rio Grande do Sul a Pizzabor. Uma pizzaria que veio para mudar o conceito de
+        <p>
+            <b>E</b>m 1997 nascia em Pelotas, no Rio Grande do Sul a Pizzabor. Uma pizzaria que veio para mudar o conceito de
             tele-entrega.
-        </p><br>
-        <p><b>A</b>pós vasta pesquisa de mercado realizada junto as maiores metrópoles do país, um grupo de empresários decidiu
-            apostar nesse desafio.</p><br>
-        <p><b>A</b> Pizzabor, além do sistema de tele-entrega possibilita, ao cliente a degustação no próprio local.</p><br>
-        <p><b>N</b>ossas pizzas são preparadas com carinho no mais alto padrão de qualidade, por gente treinada e especializada.</p><br>
+        </p>
+        <br>
+        <p>
+            <b>A</b>pós vasta pesquisa de mercado realizada junto as maiores metrópoles do país, um grupo de empresários decidiu
+            apostar nesse desafio.</p>
+        <br>
+        <p>
+            <b>A</b> Pizzabor, além do sistema de tele-entrega possibilita, ao cliente a degustação no próprio local.</p>
+        <br>
+        <p>
+            <b>N</b>ossas pizzas são preparadas com carinho no mais alto padrão de qualidade, por gente treinada e especializada.</p>
+        <br>
         <hr>
         <h5>Copyright Pizzabor</h5>
     </div>
+    <span id="spanCarrinho"></span>
+    <div id="divCarrinho">
+        <p>CARRINHO</p>
+    </div>
     <div class="container abaMenu" id="divCardapio">
+        <div class="modal fade" id="modalConfirmacao" role="dialog">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title abaTitulo"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="#" id="modalImg">
+                        <p id="modalIngredientes"></p>
+                        <p>Adicionais</p>
+                        <ul>
+                            <li>
+                                <input type="radio" name="adicional" id="bCat">&nbsp;&nbsp;Borda com Catupiry
+                            </li>
+                            <li>
+                                <input type="radio" name="adicional" id="bMis">&nbsp;&nbsp;Borda Mista
+                            </li>
+                            <li>
+                                <input type="radio" name="adicional" id="aCat">&nbsp;&nbsp;Adicional de Catupiry
+                            </li>
+                            <li>
+                                <input type="radio" name="adicional" id="aChe">&nbsp;&nbsp;Adicional de Cheddar
+                            </li>
+                            <li>
+                                <input type="radio" name="adicional" id="baCat">&nbsp;&nbsp;Borda e Adicional de Catupiry
+                            </li>
+                            <li>
+                                <input type="radio" name="adicional" id="baChe">&nbsp;&nbsp;Borda e Adicional de Cheddar
+                            </li>
+                            <li>
+                                <input type="radio" name="adicional" id="nada">&nbsp;&nbsp;Nenhum
+                            </li>
+                        </ul>
+                        <p id="modalValor"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                        <button class="btn btn-success">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <h3 class="abaTitulo">Salgadas</h3>
         <div class="card-group" id="pizzasSalgadas">
             <div class="card pizza-card">
@@ -99,7 +154,7 @@
                     <h3 class="card-title">A Moda da Casa</h3>
                     <p class="card-text">(Molho, Filé, Bacon, Cebola, Catupiry, Orégano e Mussarela)</p>
                     <p class="card-text">R$ 34,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btCasa">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -108,7 +163,7 @@
                     <h3 class="card-title">Bacon</h3>
                     <p class="card-text">(Molho, Bacon, Cebola, Azeitonas, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 30,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btBacon">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -117,16 +172,16 @@
                     <h3 class="card-title">Baiacatu</h3>
                     <p class="card-text">(Molho, Calabresa Moída, Catupiry, Azeitonas, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 37,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btBaiacatu">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
                 <img class="card-image-top pizza-img" src="imagens/basca.jpg">
                 <div class="card-body">
                     <h3 class="card-title">Basca</h3>
-                    <p class="card-text">(Molho, Bacon, Catupiry, Tomate, Mussarela e Orégano)</p>
-                    <p class="card-text">R$ 34,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <p class="card-text ingredientes">(Molho, Bacon, Catupiry, Tomate, Mussarela e Orégano)</p>
+                    <p class="card-text preco">R$ 34,00</p>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btBasca">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -135,7 +190,7 @@
                     <h3 class="card-title">Brasileira</h3>
                     <p class="card-text">(Molho, Atum, Bacon, Ervilhas, Azeitonas, Ovo, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 42,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btBrasileira">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -144,7 +199,7 @@
                     <h3 class="card-title">Calabresa</h3>
                     <p class="card-text">(Molho, Calabresa, Cebola, Azeitonas, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 30,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btCalabresa">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -153,7 +208,7 @@
                     <h3 class="card-title">Camarão</h3>
                     <p class="card-text">(Molho, Camarão, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 30,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btCamarao">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -162,7 +217,7 @@
                     <h3 class="card-title">Cheddar</h3>
                     <p class="card-text">(Molho, Cheddar, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 22,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btCheddar">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -171,7 +226,7 @@
                     <h3 class="card-title">Coração</h3>
                     <p class="card-text">(Molho, Coração, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 35,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btCoracao">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -180,7 +235,7 @@
                     <h3 class="card-title">Filé Catupiry</h3>
                     <p class="card-text">(Molho, Filé, Catupiry, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 31,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btFile">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -189,7 +244,7 @@
                     <h3 class="card-title">Frango Catupiry</h3>
                     <p class="card-text">(Molho, Frango, Catupiry, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 27,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btFrango">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -198,7 +253,7 @@
                     <h3 class="card-title">Napolitana</h3>
                     <p class="card-text">(Molho, Presunto, Palmito, Tomate, Ervilhas, Azeitonas, Ovo, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 40,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btNapolitana">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -207,7 +262,7 @@
                     <h3 class="card-title">Paulista</h3>
                     <p class="card-text">(Molho, Ervilhas, Palmito, Azeitonas, Milho, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 33,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btPaulista">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -216,7 +271,7 @@
                     <h3 class="card-title">Pepperoni</h3>
                     <p class="card-text">(Molho, Pepperoni, Azeitonas, Cebola, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 35,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btPepperoni">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -225,7 +280,7 @@
                     <h3 class="card-title">Pizzabor</h3>
                     <p class="card-text">(Molho, Lombo, Tomate, Palmito, , Ovo, Cebola, Azeitonas, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 46,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btPizzabor">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -234,7 +289,7 @@
                     <h3 class="card-title">Portuguesa</h3>
                     <p class="card-text">(Molho, Cebola, Tomate, Presunto, Pimentão, Ovo, Azeitonas, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 39,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btPortuguesa">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -243,7 +298,7 @@
                     <h3 class="card-title">Seis Queijos</h3>
                     <p class="card-text">(Molho, Gorgonzola, Provolone, Parmesão, Catupiry, Cheddar, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 27,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btQueijos">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -252,7 +307,7 @@
                     <h3 class="card-title">Siciliana</h3>
                     <p class="card-text">(Molho, Champignon, Bacon, Azeitonas, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 34,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btSiciliana">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -261,7 +316,7 @@
                     <h3 class="card-title">Strogonoff</h3>
                     <p class="card-text">(Molho, Alcatra, Creme de leite, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 38,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btStrogonoff">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -270,7 +325,7 @@
                     <h3 class="card-title">Vegetariana</h3>
                     <p class="card-text">(Molho, Cebola, Champignon, Pimentão, Brócolis, Palmito, Azeitonas, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 43,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btVegetariana">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -279,10 +334,11 @@
                     <h3 class="card-title">Lombo</h3>
                     <p class="card-text">(Molho, Lombo, Azeitonas, Mussarela e Orégano)</p>
                     <p class="card-text">R$ 30,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btLombo">Adicionar ao Carrinho</button>
                 </div>
             </div>
-        </div><br>
+        </div>
+        <br>
 
         <h3 class="abaTitulo">Doces</h3>
         <div class="card-group" id="pizzasDoces">
@@ -292,7 +348,7 @@
                     <h3 class="card-title">Brigadeiro</h3>
                     <p class="card-text">(Chocolate, Leite condensado e Chocolate granulado)</p>
                     <p class="card-text">R$ 25,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btBrigadeiro">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -301,7 +357,7 @@
                     <h3 class="card-title">Floresta Negra</h3>
                     <p class="card-text">(Bombons "Sonho de Valsa" e Leite condensado)</p>
                     <p class="card-text">R$ 24,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btFloresta">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -310,7 +366,7 @@
                     <h3 class="card-title">Sensação</h3>
                     <p class="card-text">(Chocolate, Leite condensado e Morangos)</p>
                     <p class="card-text">R$ 32,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btSensacao">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -319,7 +375,7 @@
                     <h3 class="card-title">Serra Nevada</h3>
                     <p class="card-text">(Bombons "Ouro Branco" e Leite condensado)</p>
                     <p class="card-text">R$ 24,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btSerra">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -328,7 +384,7 @@
                     <h3 class="card-title">M&M's</h3>
                     <p class="card-text">(Chocolate preto ou branco, M&M's e Leite condensado)</p>
                     <p class="card-text">R$ 28,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btMM">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -337,10 +393,11 @@
                     <h3 class="card-title">Prestígio</h3>
                     <p class="card-text">(Chocolate, Coco ralado)</p>
                     <p class="card-text">R$ 22,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" data-toggle="modal" data-target="#modalConfirmacao" id="btPrestigio">Adicionar ao Carrinho</button>
                 </div>
             </div>
-        </div><br>
+        </div>
+        <br>
 
         <h3 class="abaTitulo">Bebidas</h3>
         <div class="card-group" id="bebidas">
@@ -350,7 +407,7 @@
                     <h3 class="card-title">Coca-Cola</h3>
                     <p class="card-text">(Lata)</p>
                     <p class="card-text">R$ 3,50</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" id="btCocaLata">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -359,7 +416,7 @@
                     <h3 class="card-title">Coca-Cola</h3>
                     <p class="card-text">(2 Litros)</p>
                     <p class="card-text">R$ 7,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" id="btCoca">Adicionar ao Carrinho</button>
                 </div>
             </div>
             <div class="card pizza-card">
@@ -368,7 +425,7 @@
                     <h3 class="card-title">Guaraná</h3>
                     <p class="card-text">(2 Litros)</p>
                     <p class="card-text">R$ 6,00</p>
-                    <button class="btn btn-success btSabor">Adicionar ao Carrinho</button>
+                    <button class="btn btn-success btSabor" id="btGuarana">Adicionar ao Carrinho</button>
                 </div>
             </div>
         </div>
