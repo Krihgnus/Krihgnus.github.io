@@ -107,6 +107,10 @@ h5{
 .btSabor{
     margin: 0px 28% 0px 28%;
 }
+.btCarrinho{
+    width: 48.5%;
+    display: none;
+}
 
 /* ID's */
 #divInicio{
@@ -171,11 +175,23 @@ h5{
     right: 0px;
     top: 628px;
     width: 11%;
-    height: 500px;
-    border: 2px solid black;
+    border: 5px solid #336E37;
+    background-color: #568c5a;
     display: none;
     z-index: 1;
     float: right;
+}
+#outCarrinho{
+    padding: 0px;
+    margin: 0px;
+}
+#outTotal{
+    border-bottom: 2px solid #336E37;
+    font-family: Philosopher;
+    text-align: center;
+    color: #568c5a;
+    background-color: white;
+    margin: 0px;
 }
 
 /* ID's Concatenados */
@@ -256,6 +272,12 @@ h5{
     float: left;
     font-family: Philosopher;
     color: gray;
+}
+#outCarrinho>li{
+    border-bottom: 2px solid #336E37;
+    font-family: Philosopher;
+    text-align: center;
+    color: white;
 }
 
 /* Hovers */

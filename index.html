@@ -100,7 +100,12 @@
     </div>
     <span id="spanCarrinho"></span>
     <div id="divCarrinho">
-        <p>CARRINHO</p>
+        <ul id="outCarrinho">
+            <li id="carrinhoVazio">Seu carrinho esta vazio!<br>Confira as nossas ofertas.</li>
+        </ul>
+        <p id="outTotal"></p>
+        <button class="btn btn-secondary btCarrinho" id="btLimpar">Limpar</button>
+        <button class="btn btn-success btCarrinho" id="btComprar">Comprar</button>
     </div>
     <div class="container abaMenu" id="divCardapio">
         <div class="modal fade" id="modalConfirmacao" role="dialog">
@@ -140,8 +145,8 @@
                         <p id="modalValor"></p>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                        <button class="btn btn-success">Adicionar</button>
+                        <button class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                        <button class="btn btn-success" id="btAdicionar">Adicionar</button>
                     </div>
                 </div>
             </div>
