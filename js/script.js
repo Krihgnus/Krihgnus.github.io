@@ -5,6 +5,7 @@ $(".miIni").click(function () {
     $("#divLocalizacao").hide();
     $("#divContatos").hide();
     $("#navMenu").hide();
+    $("footer").hide();
     $("#divCarrossel").hide();
     $("#spanCarrinho").hide();
     $("#divCarrinho").hide();
@@ -24,6 +25,7 @@ $(".miHis").click(function () {
     $("#divLocalizacao").hide();
     $("#divContatos").hide();
     $("#navMenu").show();
+    $("footer").show();
     $("#divCarrossel").show();
     $("#spanCarrinho").hide();
     $("#divCarrinho").hide();
@@ -43,6 +45,7 @@ $(".miCar").click(function () {
     $("#divLocalizacao").hide();
     $("#divContatos").hide();
     $("#navMenu").show();
+    $("footer").show();
     $("#divCarrossel").show();
     $("#spanCarrinho").show();
     $(".miHis").removeClass("ativo");
@@ -61,6 +64,7 @@ $(".miLoc").click(function () {
     $("#divLocalizacao").show();
     $("#divContatos").hide();
     $("#navMenu").show();
+    $("footer").show();
     $("#divCarrossel").show();
     $("#spanCarrinho").hide();
     $("#divCarrinho").hide();
@@ -80,6 +84,7 @@ $(".miCon").click(function () {
     $("#divLocalizacao").hide();
     $("#divContatos").show();
     $("#navMenu").show();
+    $("footer").show();
     $("#divCarrossel").show();
     $("#spanCarrinho").hide();
     $("#divCarrinho").hide();
@@ -362,7 +367,7 @@ $(".btSabor").click(function () {
 var total = 0;
 var limiteCarrinho = 0;
 $("#btAdicionar").click(function () {
-    if (limiteCarrinho == 33) {
+    if (limiteCarrinho == 31) {
         alert("Limite de itens alcançado, favor realizar a compra ou esvaziar o carrinho");
     } else {
         $("#outCarrinho").append("<li>" + nomePizza + " - R$: " + valorPizza.toFixed(2) + "</li>");
@@ -378,7 +383,7 @@ $("#btAdicionar").click(function () {
 });
 
 $("#btCocaLata").click(function () {
-    if (limiteCarrinho == 33) {
+    if (limiteCarrinho == 31) {
         alert("Limite de itens alcançado, favor realizar a compra ou esvaziar o carrinho");
     } else {
         $("#outCarrinho").append('<li>Coca-Cola (Lata) - R$: 3.50</li>');
@@ -392,7 +397,7 @@ $("#btCocaLata").click(function () {
     }
 });
 $("#btCoca").click(function () {
-    if (limiteCarrinho == 33) {
+    if (limiteCarrinho == 31) {
         alert("Limite de itens alcançado, favor realizar a compra ou esvaziar o carrinho");
     } else {
         $("#outCarrinho").append('<li>Coca-Cola (2 Litros) - R$: 7.00</li>');
@@ -406,7 +411,7 @@ $("#btCoca").click(function () {
     }
 });
 $("#btGuarana").click(function () {
-    if (limiteCarrinho == 33) {
+    if (limiteCarrinho == 31) {
         alert("Limite de itens alcançado, favor realizar a compra ou esvaziar o carrinho");
     } else {
         $("#outCarrinho").append('<li>Guaraná (2 Litros) - R$: 6.00</li>');
