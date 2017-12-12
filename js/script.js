@@ -9,6 +9,7 @@ $(".miIni").click(function () {
     $("#divCarrossel").hide();
     $("#spanCarrinho").hide();
     $("#divCarrinho").hide();
+    $("#dropdownInicio").show();
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -29,6 +30,7 @@ $(".miHis").click(function () {
     $("#divCarrossel").show();
     $("#spanCarrinho").hide();
     $("#divCarrinho").hide();
+    $("#dropdownInicio").hide();
     $(".miHis").addClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -48,6 +50,7 @@ $(".miCar").click(function () {
     $("footer").show();
     $("#divCarrossel").show();
     $("#spanCarrinho").show();
+    $("#dropdownInicio").hide();
     $(".miHis").removeClass("ativo");
     $(".miCar").addClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -68,6 +71,7 @@ $(".miLoc").click(function () {
     $("#divCarrossel").show();
     $("#spanCarrinho").hide();
     $("#divCarrinho").hide();
+    $("#dropdownInicio").hide();
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").addClass("ativo");
@@ -88,6 +92,7 @@ $(".miCon").click(function () {
     $("#divCarrossel").show();
     $("#spanCarrinho").hide();
     $("#divCarrinho").hide();
+    $("#dropdownInicio").hide();
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");

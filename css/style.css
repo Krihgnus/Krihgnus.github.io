@@ -122,6 +122,10 @@ footer{
     width: 48.5%;
     display: none;
 }
+.dropdown-menu{
+    padding: 0px;
+    left: 95px;
+}
 
 /* ID's */
 #divInicio{
@@ -209,6 +213,16 @@ footer{
     background-image: url("../imagens/gmailPB.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+#btDropdown{
+    height: 70px;
+    width: 70px;
+    background-image: url("../imagens/dropdownInicio.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 25px;
+    display: none;
 }
 
 /* ID's Concatenados */
@@ -336,6 +350,13 @@ footer>h3{
 .carousel-caption>p{
     color: #fffdd0;
 }
+.dropdown-menu>li{
+    font-family: ShadedLarch;
+    text-align: center;
+    cursor: pointer;
+    background-color: #fffdd0;
+    font-size: 30px;
+}
 
 /* Hovers */
 .inativo:hover{
@@ -352,4 +373,39 @@ footer>h3{
     background-repeat: no-repeat;
     background-size: 100% 100%;
     cursor: pointer;
+}
+
+/* Medias */
+@media screen and (min-width: 1045px) and (max-width: 5000px){
+    #dropdownItens{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1045px) and (max-width: 1549px){
+    #divInicio>ul>li{
+        font-size: 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    #divInicio>ul{
+        height: 5%;
+    }
+} 
+
+@media screen and (min-width: 1px) and (max-width: 1045px){
+    #divInicio{
+        background-image: url("../imagens/backgroundInicioCel.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    #divInicio>img{
+        width: 50%;
+    }
+    #btDropdown{
+        display: block;
+    }
+    #divInicio>ul{
+        display: none;
+    }
 }
