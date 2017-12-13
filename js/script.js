@@ -13,6 +13,7 @@ $(".miIni").click(function () {
     $("#btDropdown").removeClass("btDropdownMenu");
     $("#dropdownItens").addClass("dropdownItensInicio");
     $("#dropdownItens").removeClass("dropdownItensMenu");
+    $("footer").removeClass("footerCont");
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -37,6 +38,7 @@ $(".miHis").click(function () {
     $("#btDropdown").addClass("btDropdownMenu");
     $("#dropdownItens").removeClass("dropdownItensInicio");
     $("#dropdownItens").addClass("dropdownItensMenu");
+    $("footer").removeClass("footerCont");
     $(".miHis").addClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -60,6 +62,7 @@ $(".miCar").click(function () {
     $("#btDropdown").addClass("btDropdownMenu");
     $("#dropdownItens").removeClass("dropdownItensInicio");
     $("#dropdownItens").addClass("dropdownItensMenu");
+    $("footer").removeClass("footerCont");
     $(".miHis").removeClass("ativo");
     $(".miCar").addClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -84,6 +87,7 @@ $(".miLoc").click(function () {
     $("#btDropdown").addClass("btDropdownMenu");
     $("#dropdownItens").removeClass("dropdownItensInicio");
     $("#dropdownItens").addClass("dropdownItensMenu");
+    $("footer").removeClass("footerCont");
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").addClass("ativo");
@@ -108,6 +112,7 @@ $(".miCon").click(function () {
     $("#btDropdown").addClass("btDropdownMenu");
     $("#dropdownItens").removeClass("dropdownItensInicio");
     $("#dropdownItens").addClass("dropdownItensMenu");
+    $("footer").addClass("footerCont");
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");
