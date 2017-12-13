@@ -15,6 +15,7 @@
 /* Tags */
 ul{
     list-style-type: none;
+    padding: 0px;
 }
 iframe{
     width: 100%;
@@ -119,12 +120,36 @@ footer{
     margin: 0px 28% 0px 28%;
 }
 .btCarrinho{
-    width: 48.5%;
+    font-family: Philosopher;
+    font-size: 11px;
+    width: 48.4%;
     display: none;
 }
-.dropdown-menu{
-    padding: 0px;
-    left: 95px;
+.btDropdownInicio{
+    background-image: url("../imagens/dropdownInicio.png");
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+.btDropdownMenu{
+    position: fixed;
+    background-image: url("../imagens/dropdownMenu.png");
+    top: 0.2%;
+    right: 10px;
+    z-index: 1;
+}
+.dropdownItensInicio{
+    left: 105px;
+    top: 48px;
+}
+.dropdownItensMenu{
+    position: fixed;
+    top: 55px;
+    right: 1%;
+}
+.contImg{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 /* ID's */
@@ -138,27 +163,21 @@ footer{
     width: 100%;
     height: 500px;
 }
-#divCardapio{
-    height: 5300px;
-}
 #divLocalizacao{
     width: 100%;
     height: 600px;
-}
-#divContatos{
-    padding-top: 30px;
-    height: 324px;
 }
 #navMenu{
     background-color: #D1D144;;
     border-bottom: 5px solid black;
     height: 60px;
     display: none;
+    z-index: 1;
 }
 #logoMenu{
     cursor: pointer;
     float: left;
-    width: 20%;
+    width: 13%;
     height: 200px;
     background-image: url("../imagens/logo.png");
     background-repeat: no-repeat;
@@ -181,7 +200,7 @@ footer{
     position: absolute;
     right: 0px;
     top: 570px;
-    width: 15%;
+    width: 16%;
     height: 70px;
     display: none;
     z-index: 2;
@@ -190,7 +209,7 @@ footer{
     position: absolute;
     right: 0px;
     top: 628px;
-    width: 11%;
+    width: 12%;
     border: 5px solid #336E37;
     background-color: #568c5a;
     display: none;
@@ -215,14 +234,23 @@ footer{
     background-size: 100% 100%;
 }
 #btDropdown{
-    height: 70px;
-    width: 70px;
-    background-image: url("../imagens/dropdownInicio.png");
+    height: 50px;
+    width: 50px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    position: absolute;
-    left: 25px;
     display: none;
+}
+#dropdownItens{
+    padding: 0px;
+}
+#contEmail{
+    background-image: url("../imagens/arroba.png");
+}
+#contTel{
+    background-image: url("../imagens/telefone.png");
+}
+#contFace{
+    background-image: url("../imagens/facebook.png");
 }
 
 /* ID's Concatenados */
@@ -234,7 +262,6 @@ footer{
     left: 50px;
 }
 #divInicio>ul{
-    padding: 0px;
     margin: 0px;
     position: relative;
     top: 5%;
@@ -253,18 +280,9 @@ footer{
     height: 100%;
 }
 #navMenu>ul{
-    padding: 0px;
     margin-left: 5%;
     width: 60%;
     height: 200px;
-}
-#divContatos>div>div>img{
-    width: 100%;
-    height: 100%;
-}
-#divContatos>div>div>p{
-    font-family: Philosopher;
-    color: #F58300;
 }
 #divContatos>h3{
     text-align: center;
@@ -295,7 +313,6 @@ footer{
 .modal-body>ul{
     height: 60px;
     width: 100%;
-    padding: 0px;
 }
 .modal-body>ul>li{
     width: 25%;
@@ -305,6 +322,7 @@ footer{
     color: gray;
 }
 #outCarrinho>li{
+    font-size: 12px;
     border-bottom: 2px solid #336E37;
     font-family: Philosopher;
     text-align: center;
@@ -314,16 +332,15 @@ footer>p{
     margin: 0px;
     position: absolute;
     left: 4%;
-    width: 13%;
+    width: 11%;
     color: #6d6d6d;
     font-family: Philosopher;
 }
 footer>ul{
     margin: 0px;
-    padding: 0px;
     position: absolute;
     left: 20%;
-    width: 11%;
+    width: 12%;
     height: 60px;
 }
 footer>ul>li{
@@ -340,7 +357,7 @@ footer>h3{
     position: relative;
     left: 42.5%;
     top: 20px;
-    width: 15%;
+    width: 207px;
     color: #6d6d6d;
     font-family: Daredevil;
 }
@@ -356,6 +373,22 @@ footer>h3{
     cursor: pointer;
     background-color: #fffdd0;
     font-size: 30px;
+}
+#divContatos>ul{
+    height: 270px;
+}
+#divContatos>ul>li{
+    margin-right: 20px;
+    width: 14.9%;
+    height: 100%;
+    float: left;
+}
+#divContatos>ul>li>p{
+    font-family: Philosopher;
+    color: #F58300;
+    margin-top: 68%;
+    margin-bottom: 68%;
+
 }
 
 /* Hovers */
@@ -376,7 +409,75 @@ footer>h3{
 }
 
 /* Medias */
-@media screen and (min-width: 1045px) and (max-width: 5000px){
+
+@media screen and (max-width: 992px) {
+    #pizzasSalgadas{
+        height: 10313px;
+    }
+    #pizzasDoces{
+        height: 2942px;
+    }
+    #bebidas{
+        height: 1471px;
+    }
+    .pizza-card{
+        width: 75%;
+        margin: 20px 12.5% 20px 12.5%;
+    }
+    .btSabor{
+        margin: 0px;
+        width: 100%;
+    }
+    #spanCarrinho{
+        background-image: url("../imagens/carrinhoCel.png");
+        width: 15%;
+    }
+    #divCarrinho{
+        width: 80%;
+    }
+    .modal-body>ul{
+        height: 120px;
+    }
+    .modal-body>ul>li{
+        font-size: 11px;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 939px) and (max-width: 1549px){
+    .ativo{
+        height: 75px;
+    }
+    #navMenu>ul>li{
+        font-size: 24px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    #pizzasSalgadas{
+        height: 5552px;
+    }
+    #pizzasDoces{
+        height: 1489px;
+    }
+    #bebidas{
+        height: 980px;
+    }
+    .pizza-card{
+        width: 347px;
+        margin: 20px 61px 20px 61px;
+    }
+    #spanCarrinho{
+        width: 19%;
+    }
+    #divCarrinho{
+        width: 14%;
+    }
+}
+
+@media screen and (min-width: 1045px){
     #dropdownItens{
         display: none;
     }
@@ -393,7 +494,7 @@ footer>h3{
     }
 } 
 
-@media screen and (min-width: 1px) and (max-width: 1045px){
+@media screen and (max-width: 1045px){
     #divInicio{
         background-image: url("../imagens/backgroundInicioCel.jpg");
         background-repeat: no-repeat;
@@ -407,5 +508,51 @@ footer>h3{
     }
     #divInicio>ul{
         display: none;
+    }
+    #navMenu>ul{
+        display: none;
+    }
+    #logoMenu{
+        margin-left: 5%;
+        width: 18%;
+        height: 100px;
+    }
+    .ativo{
+        border: 3px dashed #568c5a;
+        height: 50px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+    footer>p{
+        font-size: 10px;
+        width: 18%;
+        height: 60px;
+        padding-top: 8px;
+    }
+    footer>h3{
+        width: 137px;
+        font-size: 16px;
+        left: 55%;
+    }
+    footer>ul{
+        width:24%;
+        left: 23%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    #divContatos>ul{
+        height: 675px;
+    }
+    #divContatos>ul>li{
+        margin-top: 20px;
+        margin-right: 20px;
+        width: 32%;
+        height: 205px;
+        float: left;
+    }
+    #divContatos>ul>li>p{
+        margin-top: 82px;
+        margin-bottom: 82px;
     }
 }

@@ -13,8 +13,8 @@
 
 <body>
     <nav id="navMenu" class="navbar navbar-fixed-top">
+        <span class="miIni" alt="Logo Pizzabor" id="logoMenu"></span>
         <ul>
-            <li class="miIni" alt="Logo Pizzabor" id="logoMenu"></li>
             <li class="miHis menuItem">História</li>
             <li class="miCar menuItem">Cardápio</li>
             <li class="miCon menuItem">Contatos</li>
@@ -22,12 +22,6 @@
         </ul>
     </nav>
     <div id="divCarrossel" class="carousel slide abaMenu" data-ride="carousel" data-interval="4500">
-        <ol class="carousel-indicators">
-            <li data-target="#divCarrossel" data-slide-to="0" class="active"></li>
-            <li data-target="#divCarrossel" data-slide-to="1"></li>
-            <li data-target="#divCarrossel" data-slide-to="2"></li>
-            <li data-target="#divCarrossel" data-slide-to="3"></li>
-        </ol>
         <div class="carousel-inner">
 
             <div class="item active">
@@ -69,9 +63,9 @@
             <span class="sr-only">Próximo</span>
         </a>
     </div>
-    <div class="dropdown" id="dropdownInicio">
-        <button class="btn dropdown-toggle" data-toggle="dropdown" id="btDropdown"></button>
-        <ul class="dropdown-menu" id="dropdownItens">
+    <div class="dropdown" id="dropdownMenus">
+        <button class="btn dropdown-toggle btDropdownInicio" data-toggle="dropdown" id="btDropdown"></button>
+        <ul class="dropdown-menu dropdownItensInicio" id="dropdownItens">
             <li class="miHis">História</li>
             <li class="miCar">Cardápio</li>
             <li class="miCon">Contatos</li>
@@ -447,29 +441,20 @@
         <h5>Preços e Imagens Ilustrativas - Copyright Pizzabor</h5>
     </div>
     <div class="abaMenu container" id="divContatos">
-        <div class="row">
-            <div class="col-sm-2">
-                <img src="imagens/arroba.png" alt="E-Mail">
-            </div>
-            <div class="col-sm-2 contDes">
-                <p>E-Mail</p>
-                <p>pizzabor@pizzabor.com.br</p>
-            </div>
-            <div class="col-sm-2">
-                <img src="imagens/telefone.png" alt="Telefone">
-            </div>
-            <div class="col-sm-2 contDes">
-                <p>Telefone</p>
-                <p>(53) 3272-2323</p>
-            </div>
-            <div class="col-sm-2">
-                <img src="imagens/facebook.png" alt="Facebook">
-            </div>
-            <div class="col-sm-2 contDes">
-                <p>Facebook</p>
-                <p>/pizzabor.pel</p>
-            </div>
-        </div>
+        <ul>
+            <li class="contImg" id="contEmail"></li>
+            <li>
+                <p>E-Mail<br>pizzabor@pizzabor.com.br</p>
+            </li>
+            <li class="contImg" id="contTel"></li>
+            <li>
+                <p>Telefone<br>(53) 3272-2323</p>
+            </li>
+            <li class="contImg" id="contFace"></li>
+            <li>
+                <p>Facebook<br>/pizzabor.pel</p>
+            </li>
+        </ul>
         <h3>Aceitamos Reservas!</h3>
     </div>
     <div class="abaMenu" id="divLocalizacao">

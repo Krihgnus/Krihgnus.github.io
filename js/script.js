@@ -9,7 +9,10 @@ $(".miIni").click(function () {
     $("#divCarrossel").hide();
     $("#spanCarrinho").hide();
     $("#divCarrinho").hide();
-    $("#dropdownInicio").show();
+    $("#btDropdown").addClass("btDropdownInicio");
+    $("#btDropdown").removeClass("btDropdownMenu");
+    $("#dropdownItens").addClass("dropdownItensInicio");
+    $("#dropdownItens").removeClass("dropdownItensMenu");
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -30,7 +33,10 @@ $(".miHis").click(function () {
     $("#divCarrossel").show();
     $("#spanCarrinho").hide();
     $("#divCarrinho").hide();
-    $("#dropdownInicio").hide();
+    $("#btDropdown").removeClass("btDropdownInicio");
+    $("#btDropdown").addClass("btDropdownMenu");
+    $("#dropdownItens").removeClass("dropdownItensInicio");
+    $("#dropdownItens").addClass("dropdownItensMenu");
     $(".miHis").addClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -50,7 +56,10 @@ $(".miCar").click(function () {
     $("footer").show();
     $("#divCarrossel").show();
     $("#spanCarrinho").show();
-    $("#dropdownInicio").hide();
+    $("#btDropdown").removeClass("btDropdownInicio");
+    $("#btDropdown").addClass("btDropdownMenu");
+    $("#dropdownItens").removeClass("dropdownItensInicio");
+    $("#dropdownItens").addClass("dropdownItensMenu");
     $(".miHis").removeClass("ativo");
     $(".miCar").addClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -71,7 +80,10 @@ $(".miLoc").click(function () {
     $("#divCarrossel").show();
     $("#spanCarrinho").hide();
     $("#divCarrinho").hide();
-    $("#dropdownInicio").hide();
+    $("#btDropdown").removeClass("btDropdownInicio");
+    $("#btDropdown").addClass("btDropdownMenu");
+    $("#dropdownItens").removeClass("dropdownItensInicio");
+    $("#dropdownItens").addClass("dropdownItensMenu");
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").addClass("ativo");
@@ -92,7 +104,10 @@ $(".miCon").click(function () {
     $("#divCarrossel").show();
     $("#spanCarrinho").hide();
     $("#divCarrinho").hide();
-    $("#dropdownInicio").hide();
+    $("#btDropdown").removeClass("btDropdownInicio");
+    $("#btDropdown").addClass("btDropdownMenu");
+    $("#dropdownItens").removeClass("dropdownItensInicio");
+    $("#dropdownItens").addClass("dropdownItensMenu");
     $(".miHis").removeClass("ativo");
     $(".miCar").removeClass("ativo");
     $(".miLoc").removeClass("ativo");
@@ -372,7 +387,7 @@ $(".btSabor").click(function () {
 var total = 0;
 var limiteCarrinho = 0;
 $("#btAdicionar").click(function () {
-    if (limiteCarrinho == 31) {
+    if (limiteCarrinho == 15) {
         alert("Limite de itens alcançado, favor realizar a compra ou esvaziar o carrinho");
     } else {
         $("#outCarrinho").append("<li>" + nomePizza + " - R$: " + valorPizza.toFixed(2) + "</li>");
@@ -388,7 +403,7 @@ $("#btAdicionar").click(function () {
 });
 
 $("#btCocaLata").click(function () {
-    if (limiteCarrinho == 31) {
+    if (limiteCarrinho == 15) {
         alert("Limite de itens alcançado, favor realizar a compra ou esvaziar o carrinho");
     } else {
         $("#outCarrinho").append('<li>Coca-Cola (Lata) - R$: 3.50</li>');
@@ -402,7 +417,7 @@ $("#btCocaLata").click(function () {
     }
 });
 $("#btCoca").click(function () {
-    if (limiteCarrinho == 31) {
+    if (limiteCarrinho == 15) {
         alert("Limite de itens alcançado, favor realizar a compra ou esvaziar o carrinho");
     } else {
         $("#outCarrinho").append('<li>Coca-Cola (2 Litros) - R$: 7.00</li>');
@@ -416,7 +431,7 @@ $("#btCoca").click(function () {
     }
 });
 $("#btGuarana").click(function () {
-    if (limiteCarrinho == 31) {
+    if (limiteCarrinho == 15) {
         alert("Limite de itens alcançado, favor realizar a compra ou esvaziar o carrinho");
     } else {
         $("#outCarrinho").append('<li>Guaraná (2 Litros) - R$: 6.00</li>');
